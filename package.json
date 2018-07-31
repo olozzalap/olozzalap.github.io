@@ -1,0 +1,14 @@
+{
+  "name": "olozzalap.com",
+  "version": "0.0.1",
+  "description": "Eben Palazzolo's personal site",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Eben Palazzolo",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "node-sass": "^4.9.2"
+  }
+}
