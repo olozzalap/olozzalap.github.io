@@ -1,0 +1,9 @@
+@import '_variables.scss';
+
+html {
+	font-family: sans-serif;
+	box-sizing: border-box;
+	color: $oloz-main;
+}
+
+@import '_header.scss';
