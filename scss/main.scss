@@ -1,18 +1,29 @@
 @import '_variables.scss';
 @import '_helpers.scss';
+@font-face {
+    font-family: LiberationMono;
+    src: url(../assets/fonts/LiberationMono-Regular.ttf);
+}
+@font-face {
+    font-family: FranklinGothic;
+    src: url(../assets/fonts/FranklinGothic-Demi-webfont.woff);
+}
 
 * {
 	box-sizing: border-box;
 }
+html, body {
+	margin: 0;
+	overflow-y: hidden;
+}
 html {
-	font-family: sans-serif;
-	margin: 0;
-	overflow-y: hidden;
+	font-family: 'LiberationMono', Arial, sans-serif;
 }
-body {
-	margin: 0;
-	overflow-y: hidden;
+h1, h2, h3 {
+	color: $oloz-d-blue;
+	font-family: 'FranklinGothic', Arial, sans-serif;
 }
+
 .oloz-header, .oloz-footer {
 	position: fixed;
 	left: 0;
@@ -24,10 +35,8 @@ body {
 @import '_footer.scss';
 
 .oloz-main {
-	color: $oloz-d-blue;
+	color: $oloz-black;
 	width: 303vw;
-	overflow-y: auto;
-	overflow-x: hidden;
 
 	section {
 		height: 100vh;
