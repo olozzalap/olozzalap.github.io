@@ -1,9 +1,15 @@
 @import '_variables.scss';
 @import '_helpers.scss';
 
+* {
+	box-sizing: border-box;
+}
 html {
 	font-family: sans-serif;
-	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	margin: 0;
 }
 .oloz-header, .oloz-footer {
 	position: fixed;
@@ -16,5 +22,31 @@ html {
 @import '_footer.scss';
 
 .oloz-main {
-	color: black;
+	color: $oloz-d-blue;
+	width: 303vw;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+	section {
+		height: 100vh;
+		width: 100vw;
+		padding: 0 2% 70px 2%;
+		display: inline-block;;
+		text-align: left;
+		vertical-align: top;
+	}
+}
+#oloz-home {
+	padding-top: 4.7%;
+	padding-top: 27vh;
+}
+
+#oloz-about, #oloz-work {
+	padding-top: 16vh;
+}
+#oloz-about {
+
+}
+#oloz-work {
+
 }
