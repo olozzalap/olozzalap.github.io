@@ -1,1 +1,1 @@
-html{font-family:sans-serif;box-sizing:border-box;color:#bcc5e6}.oloz-header{background-color:gray}
+.color-orange{color:#f68e57}html{font-family:sans-serif;box-sizing:border-box}.oloz-header,.oloz-footer{position:fixed;left:0;right:0;background-color:#171148;color:white}.oloz-header{top:0}.oloz-footer{bottom:0}.oloz-main{color:black}
