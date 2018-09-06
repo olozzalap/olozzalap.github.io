@@ -5,6 +5,10 @@
   "scripts": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olozzalap/olozzalap.github.io.git"
+  },
   "author": "Eben Palazzolo",
   "license": "CC-BY-4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
