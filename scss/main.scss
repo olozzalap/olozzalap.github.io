@@ -32,6 +32,7 @@ h1, h2, h3 {
 	right: 0;
 	background-color: $oloz-d-blue;
 	color: white;
+	z-index: 9999;
 }
 @import '_header.scss';
 @import '_footer.scss';
@@ -41,6 +42,7 @@ h1, h2, h3 {
 	position: fixed;
 	bottom: 0;
 	width: 303vw;
+	z-index: 5;
 
 	section {
 		height: 100vh;
@@ -74,4 +76,14 @@ h1, h2, h3 {
 }
 #oloz-work {
 
+}
+
+.oloz-scroll-bg {
+	position: fixed;
+	bottom: 60px;
+	width: 3000px;
+	height: 80vh;
+	background-image: url(../assets/images/lopoly.svg);
+	background-position: center center;
+	background-size: cover;
 }
