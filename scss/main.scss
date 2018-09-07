@@ -14,10 +14,12 @@
 }
 html, body {
 	margin: 0;
-	overflow-y: hidden;
 }
 html {
 	font-family: 'LiberationMono', Arial, sans-serif;
+}
+body {
+	overflow-x: hidden;
 }
 h1, h2, h3 {
 	color: $oloz-d-blue;
@@ -36,6 +38,8 @@ h1, h2, h3 {
 
 .oloz-main {
 	color: $oloz-black;
+	position: fixed;
+	bottom: 0;
 	width: 303vw;
 
 	section {
@@ -45,6 +49,16 @@ h1, h2, h3 {
 		display: inline-block;;
 		text-align: left;
 		vertical-align: top;
+	}
+
+	@media (max-width: $mobile-breakpoint) {
+		position: static;
+		width: 100%;
+
+		section {
+			height: auto;
+			width: 100%;
+		}
 	}
 }
 #oloz-home {
