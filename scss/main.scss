@@ -54,7 +54,7 @@ h1, h2, h3 {
 	}
 
 	@media (max-width: $mobile-breakpoint) {
-		position: static;
+		position: relative;
 		width: 100%;
 
 		section {
