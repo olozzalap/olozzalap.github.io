@@ -22,11 +22,13 @@
         <![endif]-->
 
         <header class="oloz-header">
-            <img src="./assets/images/logo.png">
+            <a href="https://olozzalap.com/">
+                <img src="./assets/images/logo.png">
+            </a>
             <nav>
-                <a href="#oloz-home">HOME</a>
-                <a href="#oloz-about">ABOUT</a>
-                <a href="#oloz-work">WORK</a>
+                <a class="oloz-home-link">HOME</a>
+                <a class="oloz-about-link">ABOUT</a>
+                <a class="oloz-work-link">WORK</a>
             </nav>
         </header>
 
@@ -38,12 +40,12 @@
                         I have worked on a number of startups, projects and academies. Let's dive in!
                     </p>
                     <a href="#oloz-work">
-                        <button class="oloz-cta">VIEW MY WORK</button>
+                        <button class="oloz-cta oloz-work-link">VIEW MY WORK</button>
                     </a>
                 </article>
             </section>
             <section id="oloz-about">
-                <article>
+                <article class="oloz-about-text">
                     <h2>A birds-eye view</h2>
                     <p>
                         Hello, I’m Eben Palazzolo and I’m a software engineer with robust experience in frontend development, design/UX, rapid MVP templating, devops, project management and, of course, building modular, efficient and human-friendly code!
@@ -54,15 +56,14 @@
                         <a href="https://github.com/olozzalap" target="_blank">Github</a>
                     </p>
                 </article>
-                <article class="oloz-about-img">
-                    <img src="">
-                </article>
+                <article class="oloz-about-img"></article>
             </section>
             <section id="oloz-work">
                 <h2>Latest projects and other works</h2>
             </section>
         </main>
         <aside class="oloz-scroll-bg"></aside>
+
 
         <footer class="oloz-footer">
             
@@ -71,6 +72,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.jInvertScroll.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 
         <script src="js/main.js"></script>
 

@@ -25,6 +25,9 @@ h1, h2, h3 {
 	color: $oloz-d-blue;
 	font-family: 'FranklinGothic', Arial, sans-serif;
 }
+img {
+	max-width: 100%;
+}
 
 .oloz-header, .oloz-footer {
 	position: fixed;
@@ -72,7 +75,23 @@ h1, h2, h3 {
 	padding-top: 16vh;
 }
 #oloz-about {
-
+	article {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.oloz-about-text {
+		width: 52%;
+		padding-right: 10%;
+	}
+	.oloz-about-img {
+		width: 37.5%;
+		height: 100%;
+		background-color: $oloz-l-blue;
+		background-image: url(../assets/images/eben.jpg);
+		background-position: center center;
+		background-size: cover;
+		border-radius: 10px;
+	}
 }
 #oloz-work {
 
