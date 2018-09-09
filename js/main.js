@@ -13,9 +13,9 @@ $(document).ready( function () {
 		}
 		else {
 			// mobile
-			let totalScrollHeight = $("#oloz-home").height();
+			let totalScrollHeight = $("#oloz-home").outerHeight();
 			console.log(totalScrollHeight);
-			$.scrollTo(totalScrollHeight + 50, 220);
+			$.scrollTo(totalScrollHeight, 220);
 		}
 	})
 	$('.oloz-work-link').click( () => {
@@ -24,9 +24,9 @@ $(document).ready( function () {
 		}
 		else {
 			// mobile
-			let totalScrollHeight = $("#oloz-home").height() + $("#oloz-about").height();
+			let totalScrollHeight = $("#oloz-home").outerHeight() + $("#oloz-about").outerHeight();
 			console.log(totalScrollHeight);
-			$.scrollTo(totalScrollHeight + 50, 220);
+			$.scrollTo(totalScrollHeight, 220);
 		}
 	})
 })

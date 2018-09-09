@@ -33,7 +33,7 @@ h1 {
 h2 {
 	font-size: 36px;
 }
-a, button {
+a, button, .oloz-work-item:before, .oloz-work-item aside {
 	transition: .22s;
 	cursor: pointer;
 }
@@ -118,7 +118,47 @@ img {
 	}
 }
 #oloz-work {
+	.oloz-work-item {
+		position: relative;
+		width: 280px;
+		padding: 4px;
+		background-color: $oloz-l-blue;
+		margin: 10px;
+		border-radius: 7px;
+		text-align: center;
+		aside {
+			display: inline-block;
+			background-color: rgba(white, .7);
+			padding: 7px;
+			border-radius: 4px;
+			color: $oloz-d-blue;
+			font-size: 18px;
+			font-weight: bold;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%)
 
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+		&:hover {
+			&:before {
+				background-color: rgba($oloz-orange, .5);
+			}
+			aside {
+				opacity: 1;
+			}
+		}
+	}
 }
 
 .oloz-scroll-bg {
