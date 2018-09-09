@@ -56,13 +56,11 @@ img {
 	color: white;
 	z-index: 9999;
 }
-@import '_header.scss';
-@import '_footer.scss';
 
 .oloz-main {
 	color: $oloz-black;
 	position: fixed;
-	bottom: 0;
+	bottom: 40px;
 	width: 303vw;
 	z-index: 5;
 
@@ -70,7 +68,7 @@ img {
 		height: 100vh;
 		width: 100vw;
 		padding-top: 180px;
-		padding: calc(105px + 6vw) 2% 70px 2%;
+		padding: calc(89px + 10vh) 2% 0 2%;
 		display: inline-block;;
 		text-align: left;
 		vertical-align: top;
@@ -90,31 +88,17 @@ img {
 			width: 38%;
 		}
 	}
-
-	@media (max-width: $mobile-breakpoint) {
-		position: relative;
-		width: 100%;
-
-		section {
-			height: auto;
-			width: 100%;
-		}
-		.oloz-section-main, .oloz-section-secondary {
-			width: 100%;
-			padding-right: 0;
-		}
-	}
 }
 
 #oloz-home {
 	.oloz-section-main p {
 		font-style: italic;;
 		font-size: 18px;
-		margin-top: 10vw;
+		margin-top: 10vh;
 	}
 	.oloz-section-secondary p {
 		margin-top: 14px;
-		margin-bottom: 10vw;
+		margin-bottom: 10vh;
 	}
 }
 #oloz-about {
@@ -125,7 +109,7 @@ img {
 		}
 	}
 	.oloz-about-img {
-		height: 100%;
+		padding: 80px 0 50vh 0;
 		background-color: $oloz-l-blue;
 		background-image: url(../assets/images/eben.jpg);
 		background-position: center center;
@@ -139,9 +123,10 @@ img {
 
 .oloz-scroll-bg {
 	position: fixed;
-	bottom: 60px;
+	bottom: 40px;
 	width: 3000px;
-	height: 80vh;
+	height: 100%;
+	height: calc(100vh - 120px);
 	background-image: url(../assets/images/lopoly.svg);
 	background-position: center center;
 	background-size: cover;
@@ -160,3 +145,26 @@ img {
 		background-color: $oloz-l-blue;
 	}
 }
+
+
+// Responsive
+@media (max-width: $mobile-breakpoint) {
+	.oloz-main {
+		position: relative;
+		width: 100%;
+		padding-top: 100px;
+
+		section {
+			height: auto;
+			padding-top: 11vh;
+
+			.oloz-section-main, .oloz-section-secondary {
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+@import '_header.scss';
+@import '_footer.scss';

@@ -1,19 +1,22 @@
 .oloz-header {
 	top: 0;
+	text-align: center;
 
 	img {
 		width: 300px;
 		vertical-align: top;
-		padding: 21px 0 18px 0;
+		padding: 12px 0;
 		margin-left: 10vw;
-		@media (max-width: 400px) {
+		@media (max-width: $mobile-breakpoint) {
 			margin-left: 0;
-			width: 100%;
+			width: auto;
+			max-height: 80px;
+			padding: 0;
 		}
 	}
 	nav {
 		float: right;
-		padding-top: 36px;
+		padding-top: 27px;
 		a {
 			color: white;
 			margin-right: 7vw;
@@ -21,9 +24,20 @@
 			font-size: 26px;
 			&:hover {
 				color: $oloz-green;
-			}
-			&:hover, &.active {
 				border-bottom: 5px solid $oloz-green;
+			}
+		}
+		@media (max-width: $mobile-breakpoint) {
+			float: none;
+			padding-top: 0;
+			margin-top: -7px;
+			a {
+				font-size: 20px;
+				padding-bottom: 0;
+				&:hover {
+					border-bottom: none;
+					font-weight: bold;
+				}
 			}
 		}
 	}

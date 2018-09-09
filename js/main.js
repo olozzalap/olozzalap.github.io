@@ -8,9 +8,25 @@ $(document).ready( function () {
 		$.scrollTo('0', 220);
 	})
 	$('.oloz-about-link').click( () => {
-		$.scrollTo('50%', 220);
+		if ($(document).width() > 950) {
+			$.scrollTo('50%', 220);
+		}
+		else {
+			// mobile
+			let totalScrollHeight = $("#oloz-home").height();
+			console.log(totalScrollHeight);
+			$.scrollTo(totalScrollHeight + 50, 220);
+		}
 	})
 	$('.oloz-work-link').click( () => {
-		$.scrollTo('max', 220);
+		if ($(document).width() > 950) {
+			$.scrollTo('max', 220);
+		}
+		else {
+			// mobile
+			let totalScrollHeight = $("#oloz-home").height() + $("#oloz-about").height();
+			console.log(totalScrollHeight);
+			$.scrollTo(totalScrollHeight + 50, 220);
+		}
 	})
 })
