@@ -118,9 +118,11 @@ img {
 	}
 }
 #oloz-work {
+	// Make sure all thumbnail images are 272 x 272 (or 544 x 544 for retina)
 	.oloz-work-item {
 		position: relative;
 		width: 280px;
+		height: 280px;
 		padding: 4px;
 		background-color: $oloz-l-blue;
 		margin: 10px;
@@ -160,6 +162,15 @@ img {
 		}
 	}
 }
+.fancybox-caption a, .fancybox-caption a:link, .fancybox-caption a:visited {
+	color: $oloz-orange !important;
+	&:hover {
+		text-decoration: none;
+		color: $oloz-l-blue !important;
+		font-weight: bold;
+	}
+}
+
 
 .oloz-scroll-bg {
 	position: fixed;
