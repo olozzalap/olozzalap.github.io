@@ -1,4 +1,16 @@
 .oloz-footer {
 	bottom: 0;
 	height: 40px;
+	padding: 5px 9%;
+
+	a {
+		display: inline-block;
+		width: 30px;
+		margin-right: 10px;
+	}
+	img {
+		&:hover {
+			background-color: $oloz-orange;
+		}
+	}
 }
