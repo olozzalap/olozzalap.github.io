@@ -137,6 +137,7 @@ img {
 #oloz-work {
 	.oloz-work-inner {
 		overflow-y: scroll;
+		height: 100%;
 	}
 	// Make sure all thumbnail images are 272 x 272 (or 544 x 544 for retina)
 	.oloz-work-item {
@@ -213,11 +214,12 @@ img {
 	.oloz-main {
 		position: relative;
 		width: 100%;
-		padding-top: 100px;
+		padding-top: 50px;
 
 		section {
 			height: auto;
-			padding-top: 11vh;
+			padding-top: 116px;
+			padding-top: calc(60px + 13vh);
 
 			.oloz-section-main, .oloz-section-secondary {
 				width: 100%;
