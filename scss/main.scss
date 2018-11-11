@@ -135,10 +135,6 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 	}
 }
 #oloz-work {
-	.oloz-work-inner {
-		overflow-y: scroll;
-		height: 100%;
-	}
 	// Make sure all thumbnail images are 272 x 272 (or 544 x 544 for retina)
 	.oloz-work-item {
 		position: relative;
@@ -205,7 +201,7 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 	background-image: url(../assets/images/lopoly.svg);
 	background-position: center center;
 	background-size: cover;
-	opacity: .7;
+	opacity: .6;
 }
 
 
@@ -219,12 +215,20 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 		section {
 			height: auto;
 			padding-top: 116px;
-			padding-top: calc(60px + 13vh);
+			padding-top: calc(75px + 2vh);
 
 			.oloz-section-main, .oloz-section-secondary {
 				width: 100%;
 				padding-right: 0;
 			}
+		}
+	}
+	#oloz-home {
+		.oloz-section-main p {
+			margin-top: 45px;
+		}
+		.oloz-section-secondary p {
+			margin-bottom: 45px;
 		}
 	}
 }
