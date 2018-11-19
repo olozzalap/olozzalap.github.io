@@ -78,6 +78,7 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 .oloz-main {
 	color: $oloz-black;
 	position: fixed;
+	// footer offset
 	bottom: 40px;
 	width: 303vw;
 	z-index: 5;
@@ -135,6 +136,10 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 	}
 }
 #oloz-work {
+	.oloz-work-inner {
+		// footer offset
+		padding-bottom: 40px;
+	}
 	// Make sure all thumbnail images are 272 x 272 (or 544 x 544 for retina)
 	.oloz-work-item {
 		position: relative;
@@ -194,6 +199,7 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 // PARALLAX BACKGROUND
 .oloz-scroll-bg {
 	position: fixed;
+	// footer offset
 	bottom: 40px;
 	width: 3000px;
 	height: 100%;
