@@ -1,32 +1,33 @@
 $(document).ready( function () {
-	console.log($(document).width());
-	if ($(document).width() > 950) {
+	let screenWidth = $(document).width();
+	let transitionDuration = 220;
+	let mobileBreakpoint = 950;
+
+	if (screenWidth > mobileBreakpoint) {
 		$.jInvertScroll(['.oloz-main', '.oloz-scroll-bg']);
 	}
 
 	$('.oloz-home-link').click( () => {
-		$.scrollTo('0', 220);
+		$.scrollTo('0', transitionDuration);
 	})
 	$('.oloz-about-link').click( () => {
-		if ($(document).width() > 950) {
-			$.scrollTo('50%', 220);
+		if (screenWidth > mobileBreakpoint) {
+			$.scrollTo('50%', transitionDuration);
 		}
 		else {
 			// mobile
 			let totalScrollHeight = $("#oloz-home").outerHeight();
-			console.log(totalScrollHeight);
-			$.scrollTo(totalScrollHeight, 220);
+			$.scrollTo(totalScrollHeight, transitionDuration);
 		}
 	})
 	$('.oloz-work-link').click( () => {
-		if ($(document).width() > 950) {
-			$.scrollTo('max', 220);
+		if (screenWidth > mobileBreakpoint) {
+			$.scrollTo('max', transitionDuration);
 		}
 		else {
 			// mobile
 			let totalScrollHeight = $("#oloz-home").outerHeight() + $("#oloz-about").outerHeight();
-			console.log(totalScrollHeight);
-			$.scrollTo(totalScrollHeight, 220);
+			$.scrollTo(totalScrollHeight, transitionDuration);
 		}
 	})
 })
