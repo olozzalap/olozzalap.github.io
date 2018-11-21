@@ -1,0 +1,51 @@
+@media (max-width: $mobile-breakpoint) {
+	.oloz-header {
+		text-align: center;
+
+		img {
+			margin-left: 0;
+			width: auto;
+			max-height: 80px;
+			padding: 0;
+		}
+
+		nav {
+			float: none;
+			padding-top: 0;
+			margin-top: -7px;
+			a {
+				font-size: 20px;
+				padding-bottom: 0;
+				&:hover {
+					border-bottom: none;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	
+	.oloz-main {
+		position: relative;
+		width: 100%;
+		padding-top: 50px;
+
+		section {
+			height: auto;
+			padding-top: 116px;
+			padding-top: calc(75px + 2vh);
+
+			.oloz-section-main, .oloz-section-secondary {
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+	}
+	#oloz-home {
+		.oloz-section-main p {
+			margin-top: 45px;
+		}
+		.oloz-section-secondary p {
+			margin-bottom: 45px;
+		}
+	}
+}

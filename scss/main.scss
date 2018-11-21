@@ -49,21 +49,6 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 	cursor: pointer;
 }
 
-// THEME UI
-.oloz-cta {
-	font-family: 'LiberationMono', Arial, sans-serif;
-	font-size: 20px;
-	color: white;
-	background-color: $oloz-orange;
-	width: 100%;
-	padding: 10px 0 7px 0;
-	border: none;
-	&:hover {
-		color: $oloz-d-blue;
-		background-color: $oloz-l-blue;
-	}
-}
-
 // SHARED HEADER AND FOOTER STYLE
 .oloz-header, .oloz-footer {
 	position: fixed;
@@ -166,7 +151,6 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 			top: 50%;
 			left: 50%;
 			transform: translateY(-50%) translateX(-50%)
-
 		}
 
 		&:before {
@@ -214,33 +198,6 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 }
 
 
-// RESPONSIVE
-@media (max-width: $mobile-breakpoint) {
-	.oloz-main {
-		position: relative;
-		width: 100%;
-		padding-top: 50px;
-
-		section {
-			height: auto;
-			padding-top: 116px;
-			padding-top: calc(75px + 2vh);
-
-			.oloz-section-main, .oloz-section-secondary {
-				width: 100%;
-				padding-right: 0;
-			}
-		}
-	}
-	#oloz-home {
-		.oloz-section-main p {
-			margin-top: 45px;
-		}
-		.oloz-section-secondary p {
-			margin-bottom: 45px;
-		}
-	}
-}
-
 @import '_header.scss';
 @import '_footer.scss';
+@import '_mobile.scss';

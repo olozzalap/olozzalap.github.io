@@ -9,3 +9,18 @@
 .text-align-right {
 	text-align: right;
 }
+
+// THEME UI
+.oloz-cta {
+	font-family: 'LiberationMono', Arial, sans-serif;
+	font-size: 20px;
+	color: white;
+	background-color: $oloz-orange;
+	width: 100%;
+	padding: 10px 0 7px 0;
+	border: none;
+	&:hover {
+		color: $oloz-d-blue;
+		background-color: $oloz-l-blue;
+	}
+}
