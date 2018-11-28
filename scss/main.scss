@@ -72,7 +72,7 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 		height: 100vh;
 		width: 100vw;
 		padding-top: 180px;
-		padding: calc(89px + 10vh) 2% 0 2%;
+		padding: calc(89px + 20vh) 2% 0 2%;
 		display: inline-block;;
 		text-align: left;
 		vertical-align: top;
@@ -121,6 +121,7 @@ a, button, .oloz-work-item:before, .oloz-work-item aside, .oloz-footer img {
 	}
 }
 #oloz-work {
+	padding-top: calc(89px + 10vh);
 	h2 {
 		margin-left: 10px;
 	}
